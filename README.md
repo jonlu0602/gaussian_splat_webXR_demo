@@ -1,3 +1,3 @@
 # gaussian_splat_webXR_demo
 
-[test](https://www.google.com)
+[gaussian_splat_webXR_demo object](https://jonlu0602.github.io/gaussian_splat_webXR_demo/)
