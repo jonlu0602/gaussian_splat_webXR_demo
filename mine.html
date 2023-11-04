@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://quadjr.github.io/aframe-gaussian-splatting/index.js"></script>
+    <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
+
+  </head>
+  <body>
+    <a-scene renderer="antialias: false" stats>
+      <a-box position="0 1 -.5" material="side: double; color: #EF2D5E; transparent: true; opacity: 0.0" scale=".5 .5 .5">
+      <a-entity gaussian_splatting="src: https://huggingface.co/jonlu0602/splat_data/resolve/main/yuding.splat;" rotation="0 180 0" position="0 0 0" scale=".5 .5 .5"></a-entity>
+      </a-box> 
+      <a-entity id="right-hand"
+              laser-controls="hand: right"
+              oculus-touch-controls="hand: right"
+              raycaster="lineColor: #fff; lineOpacity: 0.7; far: 10"
+              grabber>
+      </a-entity>
+      <a-entity id="left-hand"
+              laser-controls="hand: left"
+              oculus-touch-controls="hand: left"
+              raycaster="lineColor: #fff; lineOpacity: 0.7; far: 10"
+              grabber>
+      </a-entity>
+
+    </a-scene>
+  </body>
+</html>
